@@ -34,5 +34,6 @@ class constructor
             }
             st.push(nd);
         }
+        System.out.println(root.children);
     }
 }

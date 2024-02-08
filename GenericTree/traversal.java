@@ -1,28 +1,24 @@
-import java.util.*;
+import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Stack;
 
-class Node{
-    int data;
-    ArrayList<Node> children = new ArrayList<>();
-}
-
-
-public class display_a_generic_tree {
-
-    public static void display(Node nd)
-    {
-        System.out.print(nd.data +" -> ");
-        for(Node child : nd.children)
-        {
-            System.out.print(child.data+" ");
-        }
-        System.out.println();
-        for(Node child : nd.children)
-        {
-            display(child);
-        }
+public class traversal {
+    
+    private static class Node{
+        int data;
+        ArrayList<Node> children = new ArrayList<>();
     }
 
+    
+    public static void traversal(Node nd){
+        System.out.println("pre node "+nd.data);
+        for(Node child:nd.children){
+            System.out.println("Edge pre "+nd.data+" -- "+child.data);
+            traversal(child);
+            System.out.println("Edge post "+nd.data+" -- "+child.data);
+        }
+        System.out.println("Node post "+nd.data);
+    }
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
@@ -51,7 +47,8 @@ public class display_a_generic_tree {
             }
             
         }
-        // System.out.println(root.children);
-        display(root);
+        traversal(root);
+        
     }
+    
 }
