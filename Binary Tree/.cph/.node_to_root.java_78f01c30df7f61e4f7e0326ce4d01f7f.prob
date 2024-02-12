@@ -1,0 +1,1 @@
+{"name":"Local: node_to_root","url":"d:\\DSA_Pepcoding\\Binary Tree\\node_to_root.java","tests":[{"id":1707760730154,"input":"19\n50 25 12 null null 37 30 null null null 75 62 null 70 null null 87 null null\n70","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\DSA_Pepcoding\\Binary Tree\\node_to_root.java","group":"local","local":true}
