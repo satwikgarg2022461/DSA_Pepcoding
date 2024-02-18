@@ -1,0 +1,1 @@
+{"name":"Local: singleChildNode","url":"d:\\DSA_Pepcoding\\Binary Tree\\singleChildNode.java","tests":[{"id":1708077495318,"input":"17\n50 25 12 null null 37 30 null null null 75 62 null 70 null null null","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\DSA_Pepcoding\\Binary Tree\\singleChildNode.java","group":"local","local":true}
